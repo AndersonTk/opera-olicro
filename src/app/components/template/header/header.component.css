@@ -1,0 +1,129 @@
+#container{
+  display: block;
+  box-sizing: border-box;
+ }
+
+ .navbar-header{
+   display: flex;
+  
+ }
+ 
+ .bannerheader {
+   position: relative;
+   height: auto;   
+   width: 100%;
+   align-items:center;
+   background-color: #5C829D;
+   margin: 0 auto;
+  }
+  
+  
+  .btn-colapse{
+    border: 0; 
+    float: right;
+  }
+
+p {
+  margin: 0;
+  }
+ .navbar-brand {
+  white-space: normal;
+ display: flex;
+ float: left;
+  flex: 1;
+}
+
+
+
+  .navbar-nav{
+    display: flex;
+    float: left;
+  }
+
+  .nav-link{
+  float: left;
+  display: flex;
+  padding-top: 1rem;
+  }
+  .nav-link > span{
+    color: white;
+    margin: 0 1rem 0 0;
+  }
+  
+.nav-items{
+  color: white;
+  float: left;
+  display: flex;
+}
+
+.nav-link1{
+  color: white;
+  float: right;
+  display: flex;
+  padding-top: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-linkBtn{
+  float: right;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+
+#text{
+  color: white;
+}
+
+
+.btn{   
+  background: #DBB334;
+  border-radius: 25rem;
+  color: #B93727;
+  float: right;
+}
+
+
+
+
+#carrosel{
+    
+  position:relative;
+  left: 0;
+    right: 0;
+    display:block;
+    height: 147px;
+    flex-direction: column;  
+    background-color: #49708C;
+    width: auto;
+  }
+  
+  .bannerheader img {
+    margin-left: 129px;
+    margin-right: 35px; 
+  }
+
+  .icones img{
+    max-width: 29px;
+    max-height: 35px;
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    
+  }
+  
+  .icones span{
+    color: #fff;
+    font-size: 12px;
+    
+  }
+  
+  @media (max-width: 690px) {
+    
+  .navbar-nav{
+    display: flex;
+    float: left;
+  }
+
+  }
+  
