@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="acc_content clearfix noleftmargin noleftpadding" >
+    <div class="acctitle acctitlec" id="acc_login"><i class="acc-closed icon-lock3" style="color:#1b75ba"></i>
+        <i class="acc-open icon-unlock" style="color:#1b75ba"></i>Faça o login na <strong>Licro.com</strong>
+    </div>
+
+    
+    <form role="form" id="login_form" name="login_form" class="nobottommargin" action="/login/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="JBPfNjemBMvVFkGUFR6ivxcPewPB9jl0dIFrkfrHPHFQ4BIX8pqxW6BHg1B5ngZ8">
+    <div class="col_full">
+    <mat-label>E-MAIL</mat-label>
+    <input type="email" name="username" required="" id="inputEmail" autofocus="true" maxlength="75" class="form-control">
+    </div>
+    <div class="col_full">
+    <mat-label>SENHA</mat-label>
+    <input matInput type="password" name="password" required="" id="inputPassword" minlength="6" class="form-control">
+    </div>
+    <input name="next" value="" class="form-control" id="id_next" type="hidden" style="background-color: violet;">
+    <div class="col_full nobottommargin">
+        <button class="btn btn-link btn-violet transitions animated fadeIn" id="loginButton" name="login-form-submit" value="login">Entrar</button>
+        <a href="/password/reset/" id = "fright" class="transitions animated fadeIn" type="submit">Esqueceu a senha?</a>
+    </div>
+    </form>
+    </div>
+   
+    
+   

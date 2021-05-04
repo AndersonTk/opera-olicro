@@ -7,19 +7,20 @@
     justify-content: flex-end;
     margin: 0 auto;
     background: #5C829D;
+    padding-left: 8%;
 
       
   }
 
   footer img{
     margin-top: 18px;
-    margin-left: 129px;
+    margin-left: -0.5%;
   }
 
   
   h2::after{
     content:'';
-    width: 1300px;
+    width: 93%;
     display: inline-table;
     height: 2px;
     background: black;
@@ -29,7 +30,7 @@
 
   #footer h2{
     margin-top: 12px;
-    margin-left: 140px;
+   
   }
 
  
@@ -51,7 +52,8 @@
  display: block;
  float: left;
  padding-right: 2px 10px;
-  margin-left: 140px;
+ 
+  margin-right: 60px;
   /* visual do link */
   color: #333;
   text-decoration: none;

@@ -1,18 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { FormBuilder } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  
-  
+export class HeaderComponent {
+   
+  value = 'Clear me';
+ 
+
+
+
   isExpanded:boolean = false;
   isMobile: boolean = false;
+  user: String = 'Tainá Moreno';
+
   
-  constructor() { }
+  constructor(
+   ) { 
+    
+  }
+  
   
   ngOnInit(): void {
 
@@ -87,7 +100,7 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
-
+  
   	
 
 }

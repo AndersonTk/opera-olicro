@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent implements OnInit {
+  user: any = {}; // objeto vazio
+  
+  
 
-  constructor() { }
+  constructor( ){  }
 
   ngOnInit(): void {
+   
   }
+  save() {
+
+   }
 
 }
