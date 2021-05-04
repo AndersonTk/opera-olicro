@@ -7,6 +7,12 @@
     background-color: rgba(219, 179, 52, 0.31);
     padding: 30px;
 }
+.ng-valid[required] {
+    border: 2px solid blue;
+}
+.ng-invalid:not(form) {
+    border: 2px solid red;
+}
 
 .accordion.accordion-lg .acctitle {
     font-family: Lato;

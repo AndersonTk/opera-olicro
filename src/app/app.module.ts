@@ -24,6 +24,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { RouterModule } from '@angular/router';
+import { ResetComponent } from './view/reset/reset.component';
+
 
 
 
@@ -38,6 +40,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     CadastroComponent,
     LoginComponent,
+    ResetComponent,
 
     
     
@@ -59,7 +62,8 @@ import { RouterModule } from '@angular/router';
     MatExpansionModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+   
 
   
   ],
