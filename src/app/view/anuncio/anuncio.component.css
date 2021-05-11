@@ -1,0 +1,15 @@
+.divcenter {
+    position: relative!important;
+    float: none!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.nobottompadding {
+    padding-bottom: 0!important;
+}
+.norightpadding {
+    padding-right: 0!important;
+}
+.noleftpadding {
+    padding-left: 0!important;
+}

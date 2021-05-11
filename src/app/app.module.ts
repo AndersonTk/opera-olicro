@@ -25,7 +25,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { RouterModule } from '@angular/router';
 import { ResetComponent } from './view/reset/reset.component';
-
+import { AnuncioComponent } from './view/anuncio/anuncio.component';
+import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { PerfilComponent } from './view/perfil/perfil.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -41,6 +44,9 @@ import { ResetComponent } from './view/reset/reset.component';
     CadastroComponent,
     LoginComponent,
     ResetComponent,
+    AnuncioComponent,
+    AuthenticationComponent,
+    PerfilComponent,
 
     
     
@@ -63,7 +69,7 @@ import { ResetComponent } from './view/reset/reset.component';
     MatButtonModule,
     MatCheckboxModule,
     MatDatepickerModule,
-   
+    MatMenuModule
 
   
   ],

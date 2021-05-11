@@ -10,13 +10,13 @@
   <div class="col_full">
   <div class="col_half"  [ngClass]="{'form-group': true, 'has-danger': (!userNome.valid && !userNome.pristine) , 'has-success': (userNome.valid && !userNome.pristine)}">
   <label for="userNome" class="form-control-label">NOME</label>
-  <input type="text" name="userNome" #userNome="ngModel"required="" maxlength="29" class="form-control tooltipstered form-control-danger" id="id_userNome" placeholder="Informe o nome" [(ngModel)] = "user.nome">
+  <input type="text" name="userNome" #userNome="ngModel"required="" maxlength="29" class="form-control tooltipstered form-control-danger" id="id_userNome" placeholder="Informe o nome" [(ngModel)] = "account.nome">
   <div class="form-control-feedback" [hidden]="userNome.valid || userNome.pristine">O campo deve ser informado</div>  
 </div>
 
   <div class="col_half col_last">
   <label>SOBRENOME</label>
-  <input type="text" name="userSobrenome" required="" maxlength="151" class="form-control tooltipstered" id="id_userSobrenome"  placeholder="Informe o sobrenome" [(ngModel)] = "user.sobrenome" >
+  <input type="text" name="userSobrenome" required="" maxlength="151" class="form-control tooltipstered" id="id_userSobrenome"  placeholder="Informe o sobrenome" [(ngModel)] = "account.sobrenome" >
   </div>
   </div>
   <div class="col_full">
@@ -25,7 +25,7 @@
   <label>PAÍS</label>
   </div>
   <div class="nomargin nopadding">
-  <select name="userPais" class="form-control" required="" id="id_userPais" [(ngModel)] = "user.pais">
+  <select name="userPais" class="form-control" required="" id="id_userPais" [(ngModel)] = "account.pais">
   <option value="">(select country)</option>
   <option value="FK"> Ilhas Malvinas</option>
   <option value="AF">Afeganistão</option>
@@ -281,23 +281,23 @@
   </div>
   <div class="col_half col_last">
   <label>WHATSAPP</label>
-  <input type="text" name="userWhatsapp" required="" maxlength="17" minlength="10" class="form-control tooltipstered" id="id_userWhatsapp" [(ngModel)] = "user.whatsapp">
+  <input type="text" name="userWhatsapp" required="" maxlength="17" minlength="10" class="form-control tooltipstered" id="id_userWhatsapp" [(ngModel)] = "account.whatsapp">
   </div>
   </div>
   <div class="col_full">
   <label>E-MAIL</label>
-  <input type="email" name="userEmail" required="" maxlength="75" class="form-control" id="id_userEmail" [(ngModel)] = "user.email">
+  <input type="email" name="userEmail" required="" maxlength="75" class="form-control" id="id_Email" [(ngModel)] = "account.email">
   </div>
   <div class="col_full">
   <label>ESCOLHA UMA SENHA</label>
-  <input type="password" name="userPassword" required="" minlength="6" class="form-control" id="id_userPassword" [(ngModel)] = "user.senha">
+  <input type="password" name="userPassword" required="" minlength="6" class="form-control" id="id_Password" [(ngModel)] = "account.senha">
   </div>
   <div class="col_full">
   <label>REPITA A SUA SENHA</label>
-  <input type="password" name="userPassword_confirmation" required="" minlength="6" class="form-control" id="id_userPassword_confirmation" [(ngModel)] = "user.senha">
+  <input type="password" name="userPassword_confirmation" required="" minlength="6" class="form-control" id="id_Password_confirmation" [(ngModel)] = "account.senha">
   </div>
   <div class="col_full">
-  <input type="checkbox" name="userTermos" required="" value="2" class="checkbox-style" id="id_userTermos" [(ngModel)] = "user.termos">
+  <input type="checkbox" name="userTermos" required="" value="2" class="checkbox-style" id="id_userTermos" [(ngModel)] = "account.termos">
   <label class="checkbox-style-1-label" for="id_termos">
     <a href="/termos-de-uso/" data-lightbox="ajax">LI E ACEITO OS TERMOS DE USO DA LICRO.COM*</a>
   </label>

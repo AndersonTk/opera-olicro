@@ -4,18 +4,18 @@
     </div>
 
     
-    <form role="form" id="login_form" name="login_form" class="nobottommargin" action="/login/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="JBPfNjemBMvVFkGUFR6ivxcPewPB9jl0dIFrkfrHPHFQ4BIX8pqxW6BHg1B5ngZ8">
+    <form (ngSubmit) = "onSubmit()" #userForm="ngForm" role="form" id="login_form" name="login_form" class="nobottommargin" action="/login/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="JBPfNjemBMvVFkGUFR6ivxcPewPB9jl0dIFrkfrHPHFQ4BIX8pqxW6BHg1B5ngZ8">
     <div class="col_full">
     <mat-label>E-MAIL</mat-label>
-    <input type="email" name="username" required="" id="inputEmail" autofocus="true" maxlength="75" class="form-control">
+    <input type="email" name="username" required="" id="loginEmail" autofocus="true" maxlength="75" class="form-control" [(ngModel)] = "login.email">
     </div>
     <div class="col_full">
     <mat-label>SENHA</mat-label>
-    <input matInput type="password" name="userInputPassword" required="" id="inputPassword" minlength="6" class="form-control" [(ngModel)] = "input.password">
+    <input matInput type="password" name="userInputPassword" required="" id="loginPassword" minlength="6" class="form-control" [(ngModel)] = "login.password">
     </div>
     <input name="next" value="" class="form-control" id="id_next" type="hidden">
     <div class="col_full nobottommargin">
-        <button class="btn btn-link btn-violet transitions animated fadeIn" id="inputButtonLogin" name="userButtonLogin" value="login" [(ngModel)] = "input.login">Entrar</button>
+        <button class="btn btn-link btn-violet transitions animated fadeIn" id="inputButtonLogin" name="userButtonLogin" value="login" >Entrar</button>
         <a  routerLink="/reset" id = "fright" class="transitions animated fadeIn" type="submit">Esqueceu a senha?</a>
     </div>
     </form>

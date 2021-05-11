@@ -11,8 +11,17 @@ import { User } from './user.model';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent implements OnInit {
-  user: any = {}; // objeto vazio
-  
+  account = {
+     nome: '',
+     sobrenome:'',
+     pais: '',
+     whatsapp: '',
+     email: '',
+     senha: '',
+     termos:''
+
+
+  }
   //estamos incluindo um novo usuario
   private isNovo : boolean= true;
   
@@ -43,12 +52,12 @@ export class CadastroComponent implements OnInit {
 //       'has-success': isValid && !isPristine
 //   };
 // }
-onSubmit() : void {
-  if (this.isNovo) {
-      console.log('cadastrar');
-  } else {
-      console.log('alterar');
-  }
+onSubmit() {
+  // if (this.isNovo) {
+  //     console.log('cadastrar');
+  // } else {
+  //     console.log('alterar');
+  // }
 }
 
 }

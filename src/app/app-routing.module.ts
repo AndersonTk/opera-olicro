@@ -4,28 +4,43 @@ import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/login/login.component';
 import { ResetComponent } from './view/reset/reset.component';
+import { AnuncioComponent } from './view/anuncio/anuncio.component';
+import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { AuthGuard } from './account/shared/auth.guard';
+import { PerfilComponent} from './view/perfil/perfil.component'
+import { from } from 'rxjs';
 
 
 const routes: Routes = [
+ 
   
   {
     path:'',
-    component: HomeComponent,pathMatch: 'full'
+    component: PerfilComponent,
+    children:[ 
+     { path: '', redirectTo: 'anuncio', pathMatch: 'full'  },  
+     { path: 'anuncio', component:AnuncioComponent },
+      { path: 'perfil', component:PerfilComponent }
+      
+   
+      
+    ],
+    canActivate:[AuthGuard]
   },
-  {
-    path:'cadastro',
-    component:CadastroComponent
-  },
-  {
-    path:'login',
-    component:LoginComponent
-  },
-  {
-    path: 'reset',
-    component:ResetComponent 
+  {path: '', component:AuthenticationComponent,
+  children: [
+    { path: '', redirectTo: 'login', pathMatch: 'full'  },
+    { path: 'login', component:LoginComponent  },
+    { path:'cadastro', component:CadastroComponent },
 
-  }
+    
+  ]
+},
+
+{ path: 'reset', component:ResetComponent },
+
   
+ 
 ];
 
 @NgModule({
