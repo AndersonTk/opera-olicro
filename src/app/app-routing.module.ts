@@ -4,14 +4,21 @@ import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/login/login.component';
 import { ResetComponent } from './view/reset/reset.component';
-import { AnuncioComponent } from './view/anuncio/anuncio.component';
+import { AnuncioformComponent } from './view/anuncio/anuncio-form/anuncio-form.component';
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
 import { AuthGuard } from './account/shared/auth.guard';
-import { PerfilComponent} from './view/perfil/perfil.component'
+import { PerfilComponent} from './view/perfil/perfil.component';
+
+import {AnunciosListaComponent} from'./view/anuncio/anuncios-lista/anuncios-lista.component';
 import { from } from 'rxjs';
+import { importType } from '@angular/compiler/src/output/output_ast';
 
 
 const routes: Routes = [
+
+  { path: '', component:HomeComponent },
+ 
+  
  
   
   {
@@ -19,8 +26,12 @@ const routes: Routes = [
     component: PerfilComponent,
     children:[ 
      { path: '', redirectTo: 'anuncio', pathMatch: 'full'  },  
-     { path: 'anuncio', component:AnuncioComponent },
-      { path: 'perfil', component:PerfilComponent }
+      { path: 'anuncio', component:AnuncioformComponent },
+      { path: 'perfil', component:PerfilComponent },
+      {path: 'residuo', component:AnunciosListaComponent},
+      {path: 'editar/:id', component: AnuncioformComponent}
+      
+     
       
    
       
@@ -30,14 +41,15 @@ const routes: Routes = [
   {path: '', component:AuthenticationComponent,
   children: [
     { path: '', redirectTo: 'login', pathMatch: 'full'  },
-    { path: 'login', component:LoginComponent  },
+        { path: 'login', component:LoginComponent  },
     { path:'cadastro', component:CadastroComponent },
+    { path: '', component:HomeComponent }
 
     
   ]
 },
 
-{ path: 'reset', component:ResetComponent },
+{ path: 'reset', component:ResetComponent }
 
   
  

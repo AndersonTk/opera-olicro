@@ -48,7 +48,8 @@
 .btn-link {
   background: #DBB334;
   border-radius: 20px;
-  color: #B93727;
+  color: black;
+  font-weight: bold;
   
 
   }

@@ -7,6 +7,9 @@
     background-color: rgba(219, 179, 52, 0.31);
     padding: 30px;
 }
+
+
+
 .ng-valid[required] {
     border: 2px solid blue;
 }
@@ -114,7 +117,7 @@ input, button, select, textarea {
 
 }
 input {
-    -webkit-writing-mode: horizontal-tb !important;
+   
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;

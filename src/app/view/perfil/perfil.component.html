@@ -8,11 +8,11 @@
         </a>
         <span class="example-spacer"></span>
         <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon">
-            <a href=""><mat-icon>bubble_char</mat-icon>
+            <a ><mat-icon>bubble_char</mat-icon>
             Meus Resíduos</a></button>
         <mat-menu #menu="matMenu">
         <button mat-menu-item>
-            <a href="/residuo/change/">
+            <a [routerLink] = "['/residuo']">
                 <mat-icon>add_box</mat-icon>Resíduos Cadastrados</a></button>
         <button mat-menu-item>
             <a href="/residuo/update/">

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
@@ -19,16 +18,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-
+import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { RouterModule } from '@angular/router';
 import { ResetComponent } from './view/reset/reset.component';
-import { AnuncioComponent } from './view/anuncio/anuncio.component';
+import { AnuncioformComponent } from './view/anuncio/anuncio-form/anuncio-form.component';
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
 import { PerfilComponent } from './view/perfil/perfil.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { AnunciosListaComponent } from './view/anuncio/anuncios-lista/anuncios-lista.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule} from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginModule } from './view/login/login.module';
+
 
 
 
@@ -44,9 +49,11 @@ import {MatMenuModule} from '@angular/material/menu';
     CadastroComponent,
     LoginComponent,
     ResetComponent,
-    AnuncioComponent,
+    AnuncioformComponent,
     AuthenticationComponent,
     PerfilComponent,
+    AnunciosListaComponent,
+        
 
     
     
@@ -69,7 +76,13 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatCheckboxModule,
     MatDatepickerModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    FlexLayoutModule,
+    LoginModule,
+    RouterModule
 
   
   ],

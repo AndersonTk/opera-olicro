@@ -8,7 +8,7 @@ import { AccountService } from 'src/app/account/shared/account.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+ 
 
 login = {
   email: '',
@@ -22,7 +22,8 @@ login = {
   ) { }
 
   ngOnInit(): void {}
-  async onSubmit(){
+  async onSubmit(value: any){
+    console.log(value);
 
     try{
       const result = await this.accontService.login(this.login);

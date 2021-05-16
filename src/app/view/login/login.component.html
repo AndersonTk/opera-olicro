@@ -1,25 +1,73 @@
-<div class="acc_content clearfix noleftmargin noleftpadding" >
-    <div class="acctitle acctitlec" id="acc_login"><i class="acc-closed icon-lock3" style="color:#1b75ba"></i>
-        <i class="acc-open icon-unlock" style="color:#1b75ba"></i>Faça o login na <strong>Licro.com</strong>
-    </div>
+<div class="acc_content clearfix noleftmargin noleftpadding">
+  <div class="acctitle acctitlec" id="acc_login">
+    <i class="acc-closed icon-lock3" style="color: #1b75ba"></i>
+    <i class="acc-open icon-unlock" style="color: #1b75ba"></i>Faça o login na
+    <strong>Licro.com</strong>
+  </div>
 
-    
-    <form (ngSubmit) = "onSubmit()" #userForm="ngForm" role="form" id="login_form" name="login_form" class="nobottommargin" action="/login/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="JBPfNjemBMvVFkGUFR6ivxcPewPB9jl0dIFrkfrHPHFQ4BIX8pqxW6BHg1B5ngZ8">
+  <form
+    (ngSubmit)="onSubmit(userForm.value)"
+    #userForm="ngForm"
+    role="form"
+    id="login_form"
+    name="login_form"
+    class="nobottommargin"
+    action="/login/"
+  >
+    <input
+      type="hidden"
+      name="csrfmiddlewaretoken"
+      value="JBPfNjemBMvVFkGUFR6ivxcPewPB9jl0dIFrkfrHPHFQ4BIX8pqxW6BHg1B5ngZ8"
+    />
     <div class="col_full">
-    <mat-label>E-MAIL</mat-label>
-    <input type="email" name="username" required="" id="loginEmail" autofocus="true" maxlength="75" class="form-control" [(ngModel)] = "login.email">
+      <mat-label>E-MAIL</mat-label>
+      <input
+        type="email"
+        name="username"
+        required=""
+        id="loginEmail"
+        autofocus="true"
+        maxlength="75"
+        class="form-control"
+        [(ngModel)]="login.email"
+      />
     </div>
     <div class="col_full">
-    <mat-label>SENHA</mat-label>
-    <input matInput type="password" name="userInputPassword" required="" id="loginPassword" minlength="6" class="form-control" [(ngModel)] = "login.password">
+      <mat-label>SENHA</mat-label>
+      <input
+        matInput
+        type="password"
+        name="userInputPassword"
+        required=""
+        id="loginPassword"
+        minlength="6"
+        class="form-control"
+        [(ngModel)]="login.password"
+      />
     </div>
-    <input name="next" value="" class="form-control" id="id_next" type="hidden">
+    <input
+      name="next"
+      value=""
+      class="form-control"
+      id="id_next"
+      type="hidden"
+    />
     <div class="col_full nobottommargin">
-        <button class="btn btn-link btn-violet transitions animated fadeIn" id="inputButtonLogin" name="userButtonLogin" value="login" >Entrar</button>
-        <a  routerLink="/reset" id = "fright" class="transitions animated fadeIn" type="submit">Esqueceu a senha?</a>
+      <button
+        class="btn btn-link btn-violet transitions animated fadeIn"
+        id="inputButtonLogin"
+        name="userButtonLogin"
+        value="login"
+      >
+        Entrar
+      </button>
+      <a
+        routerLink="/reset"
+        id="fright"
+        class="transitions animated fadeIn"
+        type="submit"
+        >Esqueceu a senha?</a
+      >
     </div>
-    </form>
-    </div>
-   
-    
-   
+  </form>
+</div>

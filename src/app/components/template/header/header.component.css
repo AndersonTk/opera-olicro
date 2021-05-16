@@ -85,8 +85,9 @@ p {
 .btn{   
   background: #DBB334;
   border-radius: 25rem;
-  color: #B93727;
+  color: black;
   float: right;
+  font-weight: bold;
 }
 
 

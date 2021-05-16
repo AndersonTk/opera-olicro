@@ -94,6 +94,19 @@ ul ul {
     width: 970px;
 }
 } */
+mat-icon-button{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-style:  normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #0056b3 !important;;
+
+}
+a:not([href]):not([tabindex]) {
+    color: #0056b3;
+
+}
 .example-icon{
     
     box-sizing: border-box;
@@ -114,6 +127,7 @@ ul ul {
     padding: 0 16px;
     border-radius: 4px;
     overflow: visible;
+    color: #0056b3 !important;
     
 }
 
@@ -129,12 +143,22 @@ mat-toolbar{
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    height: 4rem;
-    line-height: 2rem;
     text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    height: 44px;
+    line-height: 44px;
+    
+    border-bottom: - solid #F8F9FA;
+    transform: translate3d(0,0,0)
+    
 }
+
+@media (max-width: 991px){
+body:not(.sticky-responsive-pagemenu) mat-toolbar, .example-icon {
+    position: relative!important;
+    top: 0!important;
+}}
+
 @media (min-width: 992px){
 mat-toolbar {
     width: 970px;
 }}
-
